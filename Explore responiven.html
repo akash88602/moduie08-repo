@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        .food{
+            border: 2px solid blue;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .food img{
+            width:250px;
+        }
+        /*smaller device*/
+         @media screen and( max-width:576px) 
+         .food{
+            bg-color:red;
+
+            
+         }
+         .container{
+            grid-template-columns: repeat(1,1fr);
+         }
+            
+         
+            
+        
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="food">
+            <img src="images/pic1.jpg" alt="">
+            <H2>Item-1</H2>
+            <h3>Price:100</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at quis nesciunt quae atque eum architecto inventore aspernatur illo! Eveniet eius dolorem ratione cum fuga maxime magnam similique voluptatum accusamus.</p>
+            <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/pic2.jpg" alt="">
+                <H2>Item-2</H2>
+                <h3>Price:150</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at quis nesciunt quae atque eum architecto inventore aspernatur illo! Eveniet eius dolorem ratione cum fuga maxime magnam similique voluptatum accusamus.</p>
+                <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/pic2.jpg" alt="">
+                    <H2>Item-3</H2>
+                    <h3>Price:200</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at quis nesciunt quae atque eum architecto inventore aspernatur illo! Eveniet eius dolorem ratione cum fuga maxime magnam similique voluptatum accusamus.</p>
+                    <button>Order Now</button>
+                    </div>
+    </nav>
+    
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Form and Flexible Nav Using</title>
+    <style>
+        .lofin-form{
+            display: flex;
+            
+            flex-direction: column;
+            
+            width: 50%;
+        }
+        .lofin-form input{
+            margin-top: 10px;
+            font-size: 20px;
+            padding: 5px 10px ;
+        }
+        .lofin-form input[type="submit"]{
+            background-color: goldenrod;
+            border: 10px;
+            border-radius: 7px;
+            color: whitesmoke;
+        }
+        .login-containe{
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+        nav{
+            display: flex;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <nav>
+            <div>
+                <a href="">Home</a>
+                <a href="">Dashboard</a>
+                <a href="">Invertory</a>
+            </div>
+        </nav>
+    </header>
+    <section class="login-containe">
+        <form class="lofin-form">
+            <h1>Please Login</h1>
+            <input type="email" name="" id="" placeholder="You Email" required>
+            <input type="password" name="" id="" placeholder="password" required>
+            <input type="submit" name="" id="" value="login">
+        </form>
+    </section>
+    
+</body>
+</html>
